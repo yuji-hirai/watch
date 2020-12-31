@@ -49,7 +49,7 @@
   stop.addEventListener("click", () => {
     setButtonStateStopped();
     clearTimeout(timeoutId);
-    elapsedTime = Date.now() - startTime;
+    elapsedTime += Date.now() - startTime;
   });
 
   reset.addEventListener("click", () => {
